@@ -10,8 +10,8 @@ pip install torch torchvision
 pip install sconf>=0.2.3 lmdb>=1.2.1
 pip install numpy tqdm pillow opencv-python
 
-# === Step1: 解压数据集 ===
-tar -xzf /share/home/tm945458209690000/a945500620/Zzh-FsFont/font.tar.gz -C /share/home/tm945458209690000/a945500620/Zzh-FsFont
+# # === Step1: 解压数据集 ===
+# tar -xzf /share/home/tm945458209690000/a945500620/Zzh-FsFont/font.tar.gz -C /share/home/tm945458209690000/a945500620/Zzh-FsFont
 
 # === Step2: 构建数据库 ===
 ROOT_DIR=/share/home/tm945458209690000/a945500620/Zzh-FsFont
