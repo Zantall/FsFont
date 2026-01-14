@@ -4,17 +4,20 @@
 #     cfgs/custom.yaml \
 #     #--resume \path\to\pretrain.pdparams
 
-# === Step0: 配置环境 ===
+# === Step0.0: 配置环境 ===
 apt update
 apt install -y libgl1
 pip uninstall -y numpy
-pip install numpy==1.26.4
+pip install numpy==2.2.6
 pip install paddlepaddle-gpu==2.6.2
-pip install torch torchvision
+pip install torch>=1.10.0 torchvision>=0.11.0
 pip install sconf>=0.2.3 lmdb>=1.2.1
 pip install tqdm pillow opencv-python
 
 cd /code/FsFont
+
+=== Step0.1: 复制数据集至磁盘中，否则很慢 ===
+cp -r /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/ /code/
 
 # # === Step1: 解压数据集 ===
 # tar -xzf /share/home/tm945458209690000/a945500620/Zzh-FsFont/font.tar.gz -C /share/home/tm945458209690000/a945500620/Zzh-FsFont
@@ -38,3 +41,7 @@ echo "Start training..."
 python3 train.py \
     FsFont_5_Train \
     cfgs/custom.yaml
+
+# # === Step3: 保存数据 ===
+echo "Saving results..."
+cp -r /code/results/intermediate/ /share/home/tm945458209690000/a945500620/Zzh-FsFont/results

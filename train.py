@@ -99,7 +99,7 @@ def train(args, cfg, ddp_gpu=-1):
                               data_meta["train"],
                               trn_transform,
                               num_workers=cfg.n_workers,
-                              shuffle=False)
+                              shuffle=True)
 
     cv_loaders = get_cv_loaders(env,
                     env_get,
