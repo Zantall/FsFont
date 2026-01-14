@@ -16,7 +16,7 @@ pip install tqdm pillow opencv-python
 
 cd /code/FsFont
 
-=== Step0.1: 复制数据集至磁盘中，否则很慢 ===
+# === Step0.1: 复制数据集至磁盘中，否则很慢 ===
 cp -r /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/ /code/
 
 # # === Step1: 解压数据集 ===
