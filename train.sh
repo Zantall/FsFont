@@ -7,8 +7,6 @@
 # === Step0.0: 配置环境 ===
 apt update
 apt install -y libgl1
-pip uninstall -y numpy
-pip install numpy==2.2.6
 pip install paddlepaddle-gpu==2.6.2
 pip install torch>=1.10.0 torchvision>=0.11.0
 pip install sconf>=0.2.3 lmdb>=1.2.1
