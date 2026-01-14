@@ -5,6 +5,8 @@
 #     #--resume \path\to\pretrain.pdparams
 
 # === Step0: 配置环境 ===
+apt update
+apt install -y libgl1
 pip install paddlepaddle-gpu==2.6.2
 pip install torch torchvision
 pip install sconf>=0.2.3 lmdb>=1.2.1
