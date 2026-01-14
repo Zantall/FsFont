@@ -1,8 +1,11 @@
 use_half: False
 
-work_dir: /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/intermediate/
-data_path: /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/result/lmdb/  # path/to/saved/lmdb
-data_meta: /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/result/meta/train.json  #meta/train.json
+# work_dir: /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/intermediate/
+# data_path: /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/result/lmdb/  # path/to/saved/lmdb
+# data_meta: /share/home/tm945458209690000/a945500620/Zzh-FsFont/results/result/meta/train.json  #meta/train.json
+work_dir: ./results/intermediate/
+data_path: ./results/result/lmdb/  # path/to/saved/lmdb
+data_meta: ./results/result/meta/train.json  #meta/train.json
 content_reference_json: ./meta/cr_mapping.json
 content_font: "imgs"
 
@@ -23,7 +26,7 @@ adam_betas: [0.0, 0.9]
 cv_n_unis: 15 # 30
 cv_n_fonts: 9 # 10
 
-print_freq: 1000
+print_freq: 100
 val_freq: 5000
 save_freq: 5000
 tb_freq: 10000

@@ -17,6 +17,9 @@ tar -xzf /share/home/tm945458209690000/a945500620/Zzh-FsFont/font.tar.gz -C /sha
 ROOT_DIR=/share/home/tm945458209690000/a945500620/Zzh-FsFont
 
 echo "Building dataset..."
+
+cd /code/FsFont
+
 python3 ./build_dataset/build_meta4train.py \
   --saving_dir $ROOT_DIR/results/result \
   --content_font $ROOT_DIR/songti/imgs \
